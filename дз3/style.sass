@@ -1,0 +1,273 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Lato"
+
+@mixin txt ($f, $fw, $lh, $ls, $color)
+    font-size: $f
+    font-weight: $fw
+    line-height: $lh
+    list-style: $ls
+    color: $color
+
+@import header
+@import footer
+@import catalog
+@import registration
+@import product
+
+dl, ol, ul
+    padding: 0
+    margin: 0
+
+p
+    margin-top: 0
+    margin-bottom: 0
+
+.color_pink
+    color: #f16d7f
+
+.content_main_block_link
+    text-decoration: none
+
+.mega-item_h4_menu
+    font-size: 32px
+    font-weight: 700
+    line-height: 38px
+    letter-spacing: 0em
+
+.text_h1
+    height: 100px
+    margin-left: 16px
+    font-size: 48px
+    font-weight: 900
+    letter-spacing: 0em
+    text-align: left
+    color: #222222
+
+.text_h2
+    font-size: 37px
+
+.text_h2_color
+    color: #f16d7f
+    font-size: 37px
+
+.text_block1
+    text-align: center
+    letter-spacing: 0em
+
+.text_h3_color
+    @include txt (24px, 700, 29px, 0em, #f16d7f)
+
+.text_h4
+    @include txt (18px, 900, 22px, 0em, #ffffff )
+
+.content_info_text_h3
+    text-align: left
+    @include txt (30px, 400, 36px, 0em, #222222)
+
+.content_info_text
+    @include txt (14px, 400, 17px, 0em, #9f9f9f)
+
+.heading_mini
+    text-align: left
+    @include txt (13px, 400, 16px, 0em, #000000)
+
+.text
+    text-align: left
+    @include txt (14px, 300, 17px, 0em, #5d5d5d)
+
+.price
+    text-align: left
+
+    @include txt (16px, 400, 19px, 0em, #f16d7f)
+
+.heading_box_inside_footer_up
+    @include txt (20px, 400, 24px, 0em, #fbfbfb)
+    text-align: left
+
+.text_box_inside_footer_up
+    @include txt (14px, 300, 17px, 0em, #fbfbfb)
+    text-align: center
+    margin: 0px 120px
+
+/* fonts footer_middle*/
+.text_inside_footer_middle_box_right
+    @include txt (20px, 400, 24px, 0em, #000000)
+    text-align: center
+
+.text_inside_footer_middle_box_right_span
+    font-style: italic
+
+.text_subscribe
+    @include txt (24px, 700, 40px, 0em, #000000)
+    text-align: center
+    display: flex
+    flex-direction: column
+    margin-bottom: 6%
+
+.text_subscribe_text
+    @include txt (24px, 400, 29px, 0em, #000000)
+    text-align: center
+
+.text_home
+    color: #636363
+    text-decoration: none
+
+.content
+    min-height: 764px
+    background: #f1e4e6
+
+.main_content_box
+    max-width: 1140px
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+
+.subcontainer_up
+    height: 382px
+    display: flex
+    align-items: flex-end
+    padding-left: 63.4px
+
+.pic1_line
+    height: 92px
+    width: 12px
+    background: #f16d7f
+
+.content_main_block1
+    max-width: 1140px
+    display: flex
+    margin: 0 auto
+    justify-content: space-between
+    margin-top: 1%
+    flex-wrap: wrap
+
+.block1,
+.block2,
+.block3
+    width: 360px
+    height: 260px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.block1
+    background-image: url(img/Group\ 36.jpg)
+
+.block2
+    background-image: url(img/Group\ 37.jpg)
+
+.block3
+    background-image: url(img/Group\ 38.jpg)
+
+.content_main_block2
+    height: 180px
+    max-width: 1140px
+    background-image: url(img/Group\ 39.png)
+    margin: auto
+    margin-top: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.content_info
+    padding-top: 96px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+.content_cards
+    max-width: 1140px
+    margin: 0 auto
+    display: flex
+    border-radius: 10px
+    flex-wrap: wrap
+    justify-content: space-around
+
+.block
+    width: 360px
+    margin: 0% 0% 2% 0%
+    background: #f8f8f8
+    position: relative
+
+.item-link
+    display: block
+    text-decoration: none
+
+.block_text
+    padding: 17px 32px
+    background: #f8f8f8
+
+.block:hover
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15)
+
+.item-pic
+    width: 100%
+
+.block:hover .item-pic
+    filter: brightness(50%)
+
+.add
+    padding: 8px
+    border: 1px solid #fff
+    display: flex
+    align-items: center
+    text-decoration: none
+    pointer-events: all
+
+.add:hover
+    box-shadow: 0px 5px 10px 0px #fff
+
+.add-desc
+    @include txt (14px, 400, 17px, 0em,  rgba(255, 255, 255, 1))
+    margin-top: 15px
+    margin-left: 10px
+    margin-right: 16.4px
+
+.add-box
+    display: none
+    justify-content: center
+    width: 100%
+    position: absolute
+    top: 188.5px
+    pointer-events: none
+    position: absolute
+
+.block:hover .add-box
+    display: flex
+
+.add-pic
+    margin-left: 13px
+
+.button_browse_all_product
+    display: flex
+    justify-content: center
+
+.top__button
+    font-size: 16px
+    font-weight: 400
+    line-height: 19px
+    letter-spacing: 0em
+    text-align: left
+    color: #ffffff
+    border: 1px solid #ff6a6a
+    background-color: #f16d7f
+    padding: 14.5px 38.5px
+    text-decoration: none
+    display: inline-block
+    margin-top: 48.5px
+    transition: background 2s
+
+.top__button:hover
+    background-color: #ffffff
+    color: #f26376
+    border: 1px solid #ff6a6a
+
+@media (max-width: 425px)
+    .text_box_inside_footer_up
+        margin: 0px 5px
+    .block
+        margin: 0% 1% 2% 1%
